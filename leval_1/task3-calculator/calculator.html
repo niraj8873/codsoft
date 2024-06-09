@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" name="screen" id="display">
+            <table>
+                <tr>
+                    <td><button onclick="addToScreen('7')">7</button></td>
+                    <td><button onclick="addToScreen('8')">8</button></td>
+                    <td><button onclick="addToScreen('9')">9</button></td>
+                    <td><button class="operator" onclick="addToScreen('/')">/</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="addToScreen('4')">4</button></td>
+                    <td><button onclick="addToScreen('5')">5</button></td>
+                    <td><button onclick="addToScreen('6')">6</button></td>
+                    <td><button class="operator" onclick="addToScreen('*')">x</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="addToScreen('1')">1</button></td>
+                    <td><button onclick="addToScreen('2')">2</button></td>
+                    <td><button onclick="addToScreen('3')">3</button></td>
+                    <td><button class="operator" onclick="addToScreen('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="addToScreen('0')">0</button></td>
+                    <td><button class="clear" onclick="clearScreen()">C</button></td>
+                    <td><button class="equal" onclick="calculate()">=</button></td>
+                    <td><button class="operator" onclick="addToScreen('+')">+</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
